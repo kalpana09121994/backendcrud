@@ -6,7 +6,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect("mongodb://127.0.0.1:27017/crud")
+mongoose.connect("mongodb+srv://kalpanaravi09r:RvToCkAgIxxp327b@cluster0.wvxgz17.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 app.get('/',(req,res)=>{
     UserModel.find({})
